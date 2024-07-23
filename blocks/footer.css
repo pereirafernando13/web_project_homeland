@@ -17,8 +17,6 @@
 
 @media screen and (max-width: 320px) {
   .footer__paragraph {
-    max-width: 166px;
     margin: 0 auto;
-    padding-bottom: 24px;
   }
 }
