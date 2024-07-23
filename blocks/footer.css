@@ -8,4 +8,17 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 320px) {
+  .footer__paragraph {
+    max-width: 166px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
 }
