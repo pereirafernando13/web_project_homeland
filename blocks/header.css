@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
   padding-top: 34px;
+  max-width: 254;
+  margin: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,7 +18,10 @@
 @media screen and (max-width: 544px) {
   .header {
     width: 188px;
-    margin: 0 auto;
     padding-top: 20px;
+  }
+
+  .header__image {
+    max-width: 188px;
   }
 }
