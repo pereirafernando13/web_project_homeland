@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .footer__paragraph {
@@ -12,10 +13,10 @@
   padding-bottom: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 544px) {
   .footer__paragraph {
     margin: 0 auto;
   }
