@@ -27,6 +27,8 @@ Desktop
 ## :earth_americas: Link do Projeto
 https://pereirafernando13.github.io/web_project_homeland/
 
+https://web-project-homeland.vercel.app/
+
 ## ✒️ Autores
 
 * **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/pereirafernando13)
