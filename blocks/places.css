@@ -1,0 +1,50 @@
+.places {
+  max-width: 984px;
+}
+
+.places__place {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas:
+    "title web"
+    "image paragraph"
+    "button button";
+}
+
+.place__title {
+  max-width: 460px;
+  grid-area: title;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+.place__button {
+  max-width: 356.08px;
+  grid-area: button;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.place__image {
+  grid-area: image;
+}
+
+.place__website {
+  max-width: 456px;
+  grid-area: web;
+}
+
+.website__heading {
+  font-size: 12px;
+  line-height: 14.52;
+  color: #aaaaaa;
+}
+
+.website__paragraph {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.place__paragraphs {
+  grid-area: paragraph;
+}
