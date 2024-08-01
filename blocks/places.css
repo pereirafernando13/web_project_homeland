@@ -1,15 +1,22 @@
 .places {
+  margin-top: 92px;
   max-width: 984px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .places__place {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  row-gap: 48px;
+  column-gap: 40px;
   grid-template-areas:
     "title web"
     "image paragraph"
-    "button button";
+    "button paragraph"
+    ". paragraph";
 }
 
 .place__title {
@@ -24,12 +31,15 @@
 .place__website {
   max-width: 456px;
   grid-area: web;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .website__heading {
   margin: 0;
   font-size: 12px;
-  line-height: 14.52;
+  line-height: 14.52px;
   font-weight: 400;
   color: #aaaaaa;
   letter-spacing: 12%;
@@ -50,7 +60,14 @@
   height: 460px;
 }
 
+.place__image:hover {
+  opacity: 0.5;
+}
+
 .place__paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   grid-area: paragraph;
   font-size: 18px;
   line-height: 29.34px;
@@ -63,13 +80,55 @@
 .place__button {
   max-width: 356.08px;
   margin: 0;
-  padding: 13px 20px;
+  padding: 13px 0;
   grid-area: button;
   font-size: 18px;
   line-height: 21.78px;
-  background-image: linear-gradient(to right, #0278fe, #003a7b);
+  background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   border-radius: 4px;
-  box-shadow: 5px 5px 10px #00000080;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
   font-weight: 600;
+}
+
+.place__button:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: 720px;
+  }
+
+  .places__place {
+    max-width: 720px;
+    row-gap: 48px;
+    column-gap: 28px;
+  }
+
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__website {
+    max-width: 352px;
+  }
+
+  .place__image {
+    width: 340px;
+    height: 340px;
+    width: 100%;
+  }
+
+  .place__paragraphs {
+    max-width: 352px;
+    font-size: 16px;
+    line-height: 26.08px;
+  }
 }
