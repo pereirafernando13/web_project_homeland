@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 90px;
 }
 
 .footer__paragraph {
@@ -14,10 +15,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .footer__paragraph {
+  }
 }
 
 @media screen and (max-width: 544px) {
-  .footer__paragraph {
-    margin: 0 auto;
+  .footer {
+    display: none;
   }
 }

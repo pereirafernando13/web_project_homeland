@@ -45,6 +45,7 @@
   letter-spacing: 12%;
   max-width: 85.17px;
   text-transform: uppercase;
+  padding-bottom: 8px;
 }
 
 .website__paragraph {
@@ -58,6 +59,7 @@
   box-shadow: 10px 10px 25px #00000080;
   width: 460px;
   height: 460px;
+  width: 100%;
 }
 
 .place__image:hover {
@@ -89,6 +91,8 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   color: #fff;
   font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 
 .place__button:hover {
@@ -102,6 +106,7 @@
 @media screen and (max-width: 1024px) {
   .places {
     max-width: 720px;
+    width: 100%;
   }
 
   .places__place {
@@ -127,8 +132,65 @@
   }
 
   .place__paragraphs {
+    width: 100%;
     max-width: 352px;
     font-size: 16px;
     line-height: 26.08px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .places {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px;
+  }
+
+  .places__place {
+    display: grid;
+    max-width: 320px;
+    column-gap: 50px;
+    row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "title"
+      "web"
+      "image"
+      "paragraph"
+      "button";
+  }
+
+  .place__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    padding-left: 16px;
+  }
+
+  .place__website {
+    max-width: 288px;
+    padding-left: 16px;
+  }
+
+  .website__heading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+  }
+
+  .place__paragraph {
+    padding-left: 16px;
+    max-width: 288px;
+  }
+
+  .place__button {
+    max-width: 288px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
   }
 }
