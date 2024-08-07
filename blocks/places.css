@@ -19,7 +19,7 @@
     ". paragraph";
 }
 
-.place__title {
+.places__place-title {
   margin: 0;
   max-width: 460px;
   grid-area: title;
@@ -28,7 +28,7 @@
   font-weight: 900;
 }
 
-.place__website {
+.places__place-website {
   max-width: 456px;
   grid-area: web;
   display: flex;
@@ -36,25 +36,24 @@
   justify-content: flex-end;
 }
 
-.website__heading {
+.places__place-website-heading {
   margin: 0;
   font-size: 12px;
   line-height: 14.52px;
   font-weight: 400;
   color: #aaaaaa;
-  letter-spacing: 12%;
   max-width: 85.17px;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
 
-.website__paragraph {
+.places__place-website-paragraph {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
 
-.place__image {
+.places__place-image {
   grid-area: image;
   box-shadow: 10px 10px 25px #00000080;
   width: 460px;
@@ -62,11 +61,11 @@
   width: 100%;
 }
 
-.place__image:hover {
+.places__place-image:hover {
   opacity: 0.5;
 }
 
-.place__paragraphs {
+.places__place-paragraphs {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -75,11 +74,11 @@
   line-height: 29.34px;
 }
 
-.place__paragraph {
+.places__place-paragraph {
   margin: 0;
 }
 
-.place__button {
+.places__place-button {
   max-width: 356.08px;
   margin: 0;
   padding: 13px 0;
@@ -95,7 +94,7 @@
   text-decoration: none;
 }
 
-.place__button:hover {
+.places__place-button:hover {
   background-image: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
@@ -115,23 +114,23 @@
     column-gap: 28px;
   }
 
-  .place__title {
+  .places__place-title {
     max-width: 340px;
     font-size: 42px;
     line-height: 46px;
   }
 
-  .place__website {
+  .places__place-website {
     max-width: 352px;
   }
 
-  .place__image {
+  .places__place-image {
     width: 340px;
     height: 340px;
     width: 100%;
   }
 
-  .place__paragraphs {
+  .places__place-paragraphs {
     width: 100%;
     max-width: 352px;
     font-size: 16px;
@@ -163,30 +162,30 @@
       "button";
   }
 
-  .place__title {
+  .places__place-title {
     max-width: 288px;
     font-size: 32px;
     line-height: 35px;
     padding-left: 16px;
   }
 
-  .place__website {
+  .places__place-website {
     max-width: 288px;
     padding-left: 16px;
   }
 
-  .website__heading {
+  .places__place-website-heading {
     font-size: 12px;
     font-weight: 400;
     line-height: 14.52px;
   }
 
-  .place__paragraph {
+  .places__place-paragraph {
     padding-left: 16px;
     max-width: 288px;
   }
 
-  .place__button {
+  .places__place-button {
     max-width: 288px;
     width: 100%;
     font-size: 14px;
